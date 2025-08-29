@@ -1,0 +1,35 @@
+[package]
+name = "boost_wave"
+description = "Boost C++ library boost_wave packaged using Zanbil"
+version = "0.1.0"
+edition = "2024"
+links = "boost_wave"
+license = "BSL-1.0"
+repository = "https://github.com/zanbilify/boost_wave"
+
+[package.metadata.zanbil]
+make_dependencies_public = true
+
+[dependencies]
+boost_assert = { version = "0.1.0", path = "../boost_assert" }
+boost_concept_check = { version = "0.1.0", path = "../boost_concept_check" }
+boost_config = { version = "0.1.0", path = "../boost_config" }
+boost_core = { version = "0.1.0", path = "../boost_core" }
+boost_filesystem = { version = "0.1.0", path = "../boost_filesystem" }
+boost_format = { version = "0.1.0", path = "../boost_format" }
+boost_iterator = { version = "0.1.0", path = "../boost_iterator" }
+boost_lexical_cast = { version = "0.1.0", path = "../boost_lexical_cast" }
+boost_mpl = { version = "0.1.0", path = "../boost_mpl" }
+boost_multi_index = { version = "0.1.0", path = "../boost_multi_index" }
+boost_optional = { version = "0.1.0", path = "../boost_optional" }
+boost_pool = { version = "0.1.0", path = "../boost_pool" }
+boost_preprocessor = { version = "0.1.0", path = "../boost_preprocessor" }
+boost_serialization = { version = "0.1.0", path = "../boost_serialization" }
+boost_smart_ptr = { version = "0.1.0", path = "../boost_smart_ptr" }
+boost_spirit = { version = "0.1.0", path = "../boost_spirit" }
+boost_static_assert = { version = "0.1.0", path = "../boost_static_assert" }
+boost_throw_exception = { version = "0.1.0", path = "../boost_throw_exception" }
+boost_type_traits = { version = "0.1.0", path = "../boost_type_traits" }
+
+[build-dependencies]
+zanbil-boost-build = "0.1.0"
